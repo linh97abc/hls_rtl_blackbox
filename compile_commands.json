@@ -1,0 +1,26 @@
+[
+  {
+    "directory": "D:\\Project\\HLS\\test_matlab\\hls_dut",
+    "arguments": [
+      "D:\\app\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=D:\\app\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "D:\\Project\\HLS\\test_matlab\\hls_dut\\hls_dut.cpp"
+    ],
+    "file": "D:\\Project\\HLS\\test_matlab\\hls_dut\\hls_dut.cpp"
+  },
+  {
+    "directory": "D:\\Project\\HLS\\test_matlab\\hls_dut",
+    "arguments": [
+      "D:\\app\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=D:\\app\\Xilinx\\Vitis_HLS\\2024.1\\include",
+      "",
+      "-c",
+      "D:\\Project\\HLS\\test_matlab\\hls_dut\\main.cpp"
+    ],
+    "file": "D:\\Project\\HLS\\test_matlab\\hls_dut\\main.cpp"
+  }
+]

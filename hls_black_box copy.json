@@ -1,0 +1,71 @@
+{
+  "c_files": [
+    {
+      "c_file": "hls_dut.cpp",
+      "cflag": ""
+    }
+  ],
+  "c_function_name": "hls_black_box",
+  "rtl_files": [
+    "backbox.v"
+  ],
+  "c_parameters": [
+    {
+      "c_name": "cmd",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "data_read_in": "cmd"
+      }
+    },
+    {
+      "c_name": "x",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "data_read_in": "x"
+      }
+    },
+    {
+      "c_name": "y",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "data_read_in": "y"
+      }
+    },
+    {
+      "c_name": "res",
+      "c_port_direction": "out",
+      "rtl_ports": {
+        "data_write_out": "res_data",
+        "data_write_valid": "res_valid"
+      }
+    }
+  ],
+  "c_return": {
+    "c_port_direction": "out",
+    "rtl_ports": {
+      "data_write_out": "has_new_val"
+    }
+  },
+  "rtl_top_module_name": "hls_black_box",
+  "rtl_performance": {
+    "II": "0",
+    "latency": "1"
+  },
+  "rtl_resource_usage": {
+    "BRAM": "0",
+    "DSP": "0",
+    "FF": "0",
+    "LUT": "0",
+    "URAM": "0"
+  },
+  "rtl_common_signal": {
+    "module_clock": "ap_clk",
+    "module_reset": "ap_rst",
+    "module_clock_enable": "ap_ce",
+    "ap_ctrl_chain_protocol_idle": "ap_idle",
+    "ap_ctrl_chain_protocol_start": "ap_start",
+    "ap_ctrl_chain_protocol_ready": "ap_ready",
+    "ap_ctrl_chain_protocol_done": "ap_done",
+    "ap_ctrl_chain_protocol_continue": "ap_continue"
+  }
+}
